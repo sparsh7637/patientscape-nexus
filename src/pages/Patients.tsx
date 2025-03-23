@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { PageLayout } from '@/components/layout/PageLayout';
 import { PageTitle } from '@/components/ui/page-title';
@@ -47,7 +46,6 @@ import {
   Mail,
   Calendar,
   ChevronDown,
-  FilePrescription,
   FileText,
   Activity,
   Heart,
@@ -414,7 +412,7 @@ export default function Patients() {
                       <Calendar className="h-4 w-4" />
                     </Button>
                     <Button variant="outline" size="icon">
-                      <FilePrescription className="h-4 w-4" />
+                      <FileText className="h-4 w-4" />
                     </Button>
                   </div>
                 </div>
@@ -443,7 +441,7 @@ export default function Patients() {
                   Visits
                 </TabsTrigger>
                 <TabsTrigger value="prescriptions">
-                  <FilePrescription className="h-4 w-4 mr-2" />
+                  <FileText className="h-4 w-4 mr-2" />
                   Prescriptions
                 </TabsTrigger>
                 <TabsTrigger value="billing">
@@ -568,7 +566,7 @@ export default function Patients() {
                   
                   <div className="pt-2 flex gap-2">
                     <Button variant="outline" className="flex-1">
-                      <FilePrescription className="h-4 w-4 mr-2" />
+                      <FileText className="h-4 w-4 mr-2" />
                       New Prescription
                     </Button>
                     <Button variant="outline" className="flex-1">

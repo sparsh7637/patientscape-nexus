@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { PageLayout } from '@/components/layout/PageLayout';
 import { PageTitle } from '@/components/ui/page-title';
@@ -23,7 +22,7 @@ import {
 } from "@/components/ui/accordion";
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Search, BookOpen, Monitor, User, Calendar, FilePrescription, Info, Shield, Settings } from 'lucide-react';
+import { Search, BookOpen, Monitor, User, Calendar, FileText, Info, Shield, Settings } from 'lucide-react';
 
 export default function Documentation() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -74,7 +73,7 @@ export default function Documentation() {
               <span>Appointments</span>
             </TabsTrigger>
             <TabsTrigger value="prescriptions" className="flex flex-col items-center gap-1 py-2">
-              <FilePrescription className="h-5 w-5" />
+              <FileText className="h-5 w-5" />
               <span>Prescriptions</span>
             </TabsTrigger>
           </TabsList>
@@ -133,7 +132,7 @@ export default function Documentation() {
                   
                   <div className="border rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
-                      <FilePrescription className="h-5 w-5 text-primary" />
+                      <FileText className="h-5 w-5 text-primary" />
                       <h4 className="font-medium">Prescription Management</h4>
                     </div>
                     <p className="text-sm text-muted-foreground">
@@ -777,19 +776,4 @@ export default function Documentation() {
                     </p>
                   </div>
                   
-                  <div className="bg-accent p-4 rounded-lg">
-                    <h4 className="font-medium mb-2">Documentation of Changes</h4>
-                    <p className="text-sm">
-                      When modifying prescriptions, clearly document the reason for any changes in dosage, frequency, or 
-                      medication. This creates a clear history for other providers and helps with continuity of care.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-      </Tabs>
-    </PageLayout>
-  );
-}
+                  <div className="bg-accent p-4
