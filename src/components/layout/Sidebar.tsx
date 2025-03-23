@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
@@ -6,7 +5,6 @@ import {
   LayoutDashboard, 
   Users, 
   Calendar, 
-  FilePrescription, 
   FileText, 
   Settings, 
   Menu, 
@@ -26,7 +24,7 @@ const navItems: NavItem[] = [
   { name: 'Dashboard', path: '/', icon: LayoutDashboard },
   { name: 'Patients', path: '/patients', icon: Users },
   { name: 'Appointments', path: '/appointments', icon: Calendar },
-  { name: 'Prescriptions', path: '/prescriptions', icon: FilePrescription },
+  { name: 'Prescriptions', path: '/prescriptions', icon: FileText },
   { name: 'Documentation', path: '/documentation', icon: FileText },
   { name: 'Settings', path: '/settings', icon: Settings },
 ];

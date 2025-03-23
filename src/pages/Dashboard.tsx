@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { PageLayout } from '@/components/layout/PageLayout';
 import { PageTitle } from '@/components/ui/page-title';
@@ -6,7 +5,7 @@ import { StatCard } from '@/components/ui/stat-card';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
-import { Calendar, Users, FilePrescription, Clock, ArrowUpRight, Activity, Heart, PieChart } from 'lucide-react';
+import { Calendar, Users, FileText, Clock, ArrowUpRight, Activity, Heart, PieChart } from 'lucide-react';
 import { 
   Area, 
   AreaChart, 
@@ -102,7 +101,7 @@ export default function Dashboard() {
           title="Prescriptions" 
           value="64"
           description="This month"
-          icon={<FilePrescription className="h-4 w-4" />}
+          icon={<FileText className="h-4 w-4" />}
           trend={{ value: 5, positive: true }}
         />
         <StatCard 
@@ -298,7 +297,7 @@ export default function Dashboard() {
                 Common Conditions
               </TabsTrigger>
               <TabsTrigger value="medications">
-                <FilePrescription className="h-4 w-4 mr-2" />
+                <FileText className="h-4 w-4 mr-2" />
                 Top Medications
               </TabsTrigger>
             </TabsList>

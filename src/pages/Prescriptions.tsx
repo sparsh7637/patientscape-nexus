@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { PageLayout } from '@/components/layout/PageLayout';
 import { PageTitle } from '@/components/ui/page-title';
@@ -40,7 +39,7 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
 import { 
-  FilePencil, 
+  FilePen, 
   FilePlus, 
   FileText, 
   MoreHorizontal, 
@@ -450,7 +449,7 @@ export default function Prescriptions() {
                             View Details
                           </DropdownMenuItem>
                           <DropdownMenuItem>
-                            <FilePencil className="h-4 w-4 mr-2" />
+                            <FilePen className="h-4 w-4 mr-2" />
                             Edit
                           </DropdownMenuItem>
                           <DropdownMenuItem>
