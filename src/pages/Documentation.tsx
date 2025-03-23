@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { PageLayout } from '@/components/layout/PageLayout';
 import { PageTitle } from '@/components/ui/page-title';
@@ -776,4 +777,19 @@ export default function Documentation() {
                     </p>
                   </div>
                   
-                  <div className="bg-accent p-4
+                  <div className="bg-accent p-4 rounded-lg">
+                    <h4 className="font-medium mb-2">Regular Prescription Review</h4>
+                    <p className="text-sm">
+                      Schedule periodic comprehensive reviews of all medications a patient is taking to assess continued 
+                      need, effectiveness, and potential for simplification or optimization of the treatment regimen.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+      </Tabs>
+    </PageLayout>
+  );
+}
